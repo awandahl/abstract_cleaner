@@ -13,7 +13,6 @@ When using this tool with DiVA, always copy and paste the text directly from the
 - **Normalizes Punctuation and Paragraphs:** The script adds spaces after sentence-ending punctuation and capital letters, restores proper paragraph breaks, and removes extra line breaks.
 - **Interface:** The tool provides a text area for input, a "Fix" button to process the text, a "Reset" button to clear the fields, and a "Copy cleaned abstract" button to copy the cleaned output.
 
-
 ### Limitations of the Script
 
 - **Limited to Swedish/Latin Characters:** The script is tuned for Swedish and English characters, but may not handle all possible artifacts or special characters from other languages, especially those outside the Latin alphabet.
@@ -22,7 +21,13 @@ When using this tool with DiVA, always copy and paste the text directly from the
 - **No Support for HTML or Markup:** The script is designed for plain text and does not handle or clean up HTML, LaTeX, or other embedded markup within the abstract.
 - **No OCR or Image Processing:** The script cannot process images or scanned text; it only works with text that has already been copied as plain text, including any OCR artifacts.
 
-### Usage
+### Usage Instructions for Different Operating Systems
+
+Detailed instructions for using the Abstract Cleaner tool are available for both Windows and Mac users. Please refer to the following guides for step-by-step help:
+
+- [Usage instructions for Windows](https://github.com/awandahl/abstract_cleaner/blob/main/usage_windows.md)
+- [Usage instructions for Mac](https://github.com/awandahl/abstract_cleaner/blob/main/usage_mac.md)
+
 
 ### Disclaimer
 
