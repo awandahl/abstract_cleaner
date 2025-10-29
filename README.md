@@ -2,7 +2,14 @@
 
 This HTML/JavaScript script, is a simple web tool designed to clean up abstracts or other text that has been copied from PDFs or other sources, especially those with common formatting artifacts such as broken Swedish letters, hyphenated line breaks, and mangled paragraph structure. The script allows users to paste the problem text into a text area, click "Fix," and then view or copy the cleaned text.
 
-### Important
+### Usage Instructions for Different Operating Systems
+
+Detailed instructions for using the Abstract Cleaner tool are available for both Windows and Mac users. Please refer to the following guides for step-by-step help:
+
+- [Usage instructions for Windows](https://github.com/awandahl/abstract_cleaner/blob/main/usage_windows.md)
+- [Usage instructions for Mac](https://github.com/awandahl/abstract_cleaner/blob/main/usage_mac.md)
+
+### Important when using with DiVA
 
 When using this tool with DiVA, always copy and paste the text directly from the thesis PDF file, not from the abstract field in the DiVA record. This ensures that the formatting and structure are preserved as they appear in the original document, which is important for accurate cleaning and review.
 
