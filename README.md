@@ -4,7 +4,7 @@ This HTML/JavaScript script, is a simple web tool designed to clean up abstracts
 
 ### Usage Instructions for Different Operating Systems
 
-Detailed instructions for using the Abstract Cleaner tool are available for both Windows and Mac users. Please refer to the following guides for step-by-step help:
+Detailed instructions for downloading the Abstract Cleaner file are available for both Windows and Mac users. Please refer to the following guides for step-by-step help:
 
 - [Usage instructions for Windows](https://github.com/awandahl/abstract_cleaner/blob/main/usage_windows.md)
 - [Usage instructions for Mac](https://github.com/awandahl/abstract_cleaner/blob/main/usage_mac.md)
@@ -28,14 +28,6 @@ When using this tool with DiVA, always copy and paste the text directly from the
 - **No Contextual Understanding:** The script does not understand the meaning of the text, so compromises like hyphen removal or whitespace fixes may occasionally merge words incorrectly or miss context-specific nuances.
 - **No Support for HTML or Markup:** The script is designed for plain text and does not handle or clean up HTML, LaTeX, or other embedded markup within the abstract.
 - **No OCR or Image Processing:** The script cannot process images or scanned text; it only works with text that has already been copied as plain text, including any OCR artifacts.
-
-### Usage Instructions for Different Operating Systems
-
-Detailed instructions for using the Abstract Cleaner tool are available for both Windows and Mac users. Please refer to the following guides for step-by-step help:
-
-- [Usage instructions for Windows](https://github.com/awandahl/abstract_cleaner/blob/main/usage_windows.md)
-- [Usage instructions for Mac](https://github.com/awandahl/abstract_cleaner/blob/main/usage_mac.md)
-
 
 ### Disclaimer
 
