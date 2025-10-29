@@ -8,6 +8,7 @@ Detailed instructions for using the Abstract Cleaner tool are available for both
 
 - [Usage instructions for Windows](https://github.com/awandahl/abstract_cleaner/blob/main/usage_windows.md)
 - [Usage instructions for Mac](https://github.com/awandahl/abstract_cleaner/blob/main/usage_mac.md)
+- [Usage instructions for Linux](https://github.com/awandahl/abstract_cleaner/blob/main/usage_linux.md)
 
 ### Important when using with DiVA
 
