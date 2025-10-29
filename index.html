@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Abstract Cleaner</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    textarea { width: 100%; height: 400px; margin-bottom: 10px; font-size: 16px; }
+    button { padding: 8px 16px; margin-bottom: 10px; }
+    pre { white-space: pre-wrap; background: #f9f9f9; padding: 10px; border: 1px solid #ddd; height: 400px; overflow: auto; font-size: 16px; }
+    .button-row { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Abstract Cleaner</h2>
+  <p>Paste text copied from a funny funny abstract below and click <b>Fix</b>:</p>
+  <textarea id="inputText" placeholder="Paste your copied abstract here..."></textarea>
+  <br>
+  <div class="button-row">
+    <button onclick="runFix()">Fix</button>
+    <button onclick="resetAll()">Reset</button>
+  </div>
+  <h3>Cleaned Abstract:</h3>
+  <pre id="outputText"></pre>
+  <button onclick="copyOutput()">Copy cleaned abstract</button>
+
+  <script>
+    function fixPdfText(text) {
+      // Restore Swedish letters from artifact combinations
+      // Fix Swedish letters with possible space before accent (like ' ¨o' → 'ö')
+      text = text.replace(/ ?¨a/g, "ä");
+      text = text.replace(/ ?¨A/g, "Ä");
+      text = text.replace(/ ?¨o/g, "ö");
+      text = text.replace(/ ?¨O/g, "Ö");
+      text = text.replace(/ ?˚a/g, "å");
+      text = text.replace(/ ?˚A/g, "Å");
+      text = text.replace(/ ?¨u/g, "ü");
+      text = text.replace(/ ?¨U/g, "Ü");
+
+      // Normalize line endings
+      text = text.replace(/\r\n/g, "\n");
+
+      // Temporarily mark paragraph breaks (double newlines)
+      text = text.replace(/\n\s*\n/g, "<<<PARA>>>");
+
+      // Handle hyphenated line breaks: e.g. "exam-\nple" -> "example"
+      text = text.replace(/(\w)-\n(\w)/g, "$1$2");
+
+      // Handle single line breaks that got glued words: "word\nNext" -> "word Next"
+      text = text.replace(/(\w)\n(\w)/g, "$1 $2");
+
+      // Insert space after sentence-ending punctuation followed by capital letter
+      text = text.replace(/([.!?%])([A-Z])/g, "$1 $2");
+
+      // Treat single newline after sentence-ending punctuation followed by capital as paragraph break
+      text = text.replace(/([.!?%])\n([A-Z])/g, "$1\n\n$2");
+
+      // Add space after comma/semicolon/colon followed by a capital
+      text = text.replace(/([,;:])([A-Z])/g, "$1 $2");
+
+      // Restore paragraph breaks and collapse multiple to single paragraph breaks
+      text = text.replace(/<<<PARA>>>+/g, "\n\n");
+      text = text.replace(/\n{3,}/g, "\n\n");
+
+      return text.trim();
+    }
+
+    function runFix() {
+      const input = document.getElementById("inputText").value;
+      const output = fixPdfText(input);
+      document.getElementById("outputText").textContent = output;
+    }
+
+    function resetAll() {
+      document.getElementById("inputText").value = "";
+      document.getElementById("outputText").textContent = "";
+    }
+
+    function copyOutput() {
+      const output = document.getElementById("outputText").textContent;
+      if (output) {
+        navigator.clipboard.writeText(output);
+      }
+    }
+  </script>
+</body>
+</html>
