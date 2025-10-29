@@ -19,7 +19,7 @@ This command opens the file in your default browser.
 4. **Use the Tool:**
 Once the file is open in your browser, you will see the "Abstract Cleaner" interface. Paste the abstract or text you want to clean, click "Fix," and review the cleaned text. You can copy the cleaned output using the button provided.    
 5. **Editing the File (Optional):**
-To edit the script, open the `.html` file in a text editor like Gedit, Kate, or Visual Studio Code. Save your changes and reopen the file in the browser to see the updated version.
+To edit the script, open the `.html` file in a text editor like Gedit, Kate, or Visual Studio Code. Save your changes and reopen the file in the browser to see the updated version.    
 6. **Local Server Option (for advanced users):**    
 If you encounter issues with local file access, you can run a local server in the terminal:
 
