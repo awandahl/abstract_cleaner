@@ -37,4 +37,4 @@ This tool automatically cleans and reformats text copied from PDFs, but it may n
 
 Bugs and suggestions can be sent to Anders Wändahl aw@kth.se
 
-Abstracts to try out:  [https://kth.diva-portal.org/smash/get/diva2:1940497/FULLTEXT01.pdf](https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1940497&dswid=-4665)
+Abstracts to try out:  https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1940497&dswid=-4665
