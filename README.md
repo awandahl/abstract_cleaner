@@ -12,7 +12,7 @@ Detailed instructions for downloading the Abstract Cleaner file are available fo
 
 ### Important when using with DiVA
 
-When using this tool with DiVA, always copy and paste the text directly from the thesis PDF file, not from the abstract field in the DiVA record. This ensures that the formatting and structure are preserved as they appear in the original document, which is important for accurate cleaning and review.
+*When using this tool with DiVA, always copy and paste the text directly from the thesis PDF file, not from the abstract field in the DiVA record*. This ensures that the formatting and structure are preserved as they appear in the original document, which is important for accurate cleaning and review.
 
 ### What the Script Does
 
