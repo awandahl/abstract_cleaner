@@ -1,6 +1,6 @@
 # Abstract Cleaner
 
-This HTML/JavaScript script, is a simple web tool designed to clean up abstracts or other text that has been copied from PDFs or other sources, especially those with common formatting artifacts such as broken Swedish letters, hyphenated line breaks, and mangled paragraph structure. The script allows users to paste the problem text into a text area, click "Fix," and then view and copy the cleaned text.
+This HTML/JavaScript script, is a simple web tool designed to clean up abstracts or other texts that has been copied from PDFs or other sources, especially those with common formatting artifacts such as broken Swedish letters, hyphenated line breaks, and mangled paragraph structure. The script allows users to paste the problem text into a text area, click "Fix," and then view and copy the cleaned text.
 
 ### Download Instructions for Different Operating Systems
 
